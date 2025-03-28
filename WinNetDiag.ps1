@@ -100,7 +100,7 @@ Function Cleanup-OldLogs {
 Function Show-MainMenu {
     <# .SYNOPSIS Displays the interactive menu options. #>
     Clear-Host; $titleColor = "Cyan"; $optionColor = "Yellow"; $promptColor = "White"
-    Write-Host ("="*60) -ForegroundColor $titleColor; Write-Host (" WinNetDiag - Network Diagnostics & Repair Tool (Menu)") -ForegroundColor $titleColor; Write-Host ("="*60) -ForegroundColor $titleColor
+    Write-Host ("="*60) -ForegroundColor $titleColor; Write-Host (" WinNetDiag - Network Diagnostics & Repair Tool ") -ForegroundColor $titleColor; Write-Host ("="*60) -ForegroundColor $titleColor
     Write-Host "`n Choose an option:`n" -ForegroundColor $promptColor
     Write-Host " [1] Basic Check" -ForegroundColor $optionColor; Write-Host "     (Checks, Basic Test, Light Fixes if needed)"
     Write-Host " [2] Medium Check" -ForegroundColor $optionColor; Write-Host "     (Basic Check + Adapter Reset if needed)"
