@@ -343,7 +343,7 @@ Function Show-IntuitiveConnections {
 Clear-Host
 $scriptStartTime = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
 Write-Host "======================================================================" -ForegroundColor Blue
-Write-Host "              Network Diagnostics & Repair Tool (Menu)                " -ForegroundColor Blue
+Write-Host "              Network Diagnostics & Repair Tool                       " -ForegroundColor Blue
 Write-Host "======================================================================"
 Write-Host "Started: $scriptStartTime by $env:USERNAME@$env:COMPUTERNAME"
 if (-not $Quiet) { Write-Host "Parameters Used: $($MyInvocation.BoundParameters.Keys -join ', ')" -ForegroundColor DarkGray }
