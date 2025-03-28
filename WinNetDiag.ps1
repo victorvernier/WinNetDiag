@@ -13,22 +13,6 @@ param(
     [string]$CentralLogBasePath = $null
 )
 
-<#
-.SYNOPSIS
-    Windows network diagnostics and repair script v1.9.1 (Menu Driven, Config File, Log Rotation, Quiet Mode, Fixes).
-
-.DESCRIPTION
-    Provides an interactive menu to diagnose and repair Windows network connectivity issues.
-    Reads settings from WinNetDiag.config.json (if found). Performs log rotation. Implements -Quiet parameter.
-    Includes Initial Checks, Basic Tests, Progressive Fixes, Targeted Diagnostics, Connection Viewing.
-    Generates detailed logs.
-
-.NOTES
-    Requires execution as Administrator.
-    DEEP RESETS (in option [3]) REQUIRE MANUAL REBOOT AFTERWARDS.
-    Creates/Uses 'WinNetDiag.config.json' in the script directory for defaults.
-#>
-
 #region Global Script State Variables
 $script:logPath = $null
 $script:rebootRequired = $false
